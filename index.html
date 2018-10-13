@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game 1.0</title>
+    <!--引入需要的css文件, 注意这里的引入使用的是link方式来引入css文件-->
+    <link rel='stylesheet' type='text/css' href='css/Main.css'/>
+</head>
+<body>
+<!--canvas画布-->
+<canvas id="gameCanvas" width="580" height="600">
+    Canvas not supported in your browser!
+</canvas>
+
+
+<!--canvas上方的悬浮div-->
+<div id="loadingToast">
+    <span id="gameTitle">Engine Development</span>
+    <span id="loadingContents">
+        <p class="mainFunctions">
+            主要功能：
+        </p>
+
+
+        <ul class="Contents">
+            <li>1.资源加载的画面</li>
+            <li>2.游戏资源的管理</li>
+            <li>3.声音的播放</li>
+            <li>4.具有视差动画的滚动背景</li>
+            <li>5.生命数量的显示</li>
+            <li>6.高分榜的维护</li>
+            <li>7.按键的监听与处理</li>
+            <li>8.暂停功能与自动暂停机制实现</li>
+            <li>9.游戏结束的流程处理</li>
+        </ul>
+
+    </span>
+
+    <span id="loadButtonSpan">
+            <button autofocus="true" id="loadButton">载入引擎...</button><br/>
+            <span id="loadingMessage">Loading……</span>
+        </span>
+    <!--用于显示进度条-->
+    <div id="progressDiv">
+    </div>
+
+</div>
+
+
+<!--左上角计时器-->
+<div id="gameTimerDiv">
+    <span>000</span>
+</div>
+<!--右上角生命值-->
+<div id="leftLives">
+    <span id="lifeValue">生命值：100</span>
+</div>
+
+<!--中部的暂停-->
+<div id="pausedToast">
+    <span>暂停</span><br/>
+    <span>点击此区域任意位置继续</span>
+</div>
+
+
+
+<!--中下位置的点击按钮-->
+<div id="loseLifePanel">
+    <button id="loseLifeButton" onmouseover="this.style.backgroundColor='#00aced'"
+            onmouseleave="this.style.backgroundColor = ''">开杀
+    </button>
+</div>
+
+
+
+<!--游戏结束及高分榜-->
+<div id="gameoverPan">
+    <div id="topPan">
+        <span id="scoreText">140</span>
+    </div>
+    <div id="middlePan">
+        <span>High Score!</span><br/>
+        <span class="Name">What's your name?</span><br/>
+
+        <input id='playerName' type='text' autofocus='true'><button id="addMyScoreButton">添加</button><button id="newGameButton">新游戏</button>
+    </div>
+    <div id="downPan">
+        <span>Previous High Scores</span>
+        <ul id="highScoreList">
+        </ul>
+    </div>
+</div>
+
+
+<!--游戏播放音乐需要使用的音频文件; preload 属性规定是否在页面加载后载入音频。-->
+<audio id="pop" preload="auto">
+    <source src="sounds/pop.ogg" type="audio/ogg">
+    <source src="sounds/pop.mp3" type="audio/mp3">
+</audio>
+<audio id="whoosh" preload="auto">
+    <source src="sounds/whoosh.ogg" type="audio/ogg">
+    <source src="sounds/whoosh.mp3" type="audio/mp3">
+</audio>
+
+
+
+<!--引入需要的js文件-->
+<script type="text/javascript" src="Engine/progressbar.js"></script>
+<script type="text/javascript" src="Engine/requestNextAnimationFrame.js"></script>
+<script type="text/javascript" src="Engine/GameEngine1.0.js"></script>
+<script type="text/javascript" src="js/Main.js"></script>
+</body>
+</html>
+
+
+

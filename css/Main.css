@@ -1,0 +1,194 @@
+/*设置主页面的css*/
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*canvas的样式*/
+#gameCanvas{
+    background-color: #A0C2FB;
+}
+
+
+/*游戏的载入悬浮框样式*/
+#loadingToast{
+    /*使用绝对定位的方式可以把div放在想放置的位置*/
+    position: absolute;
+    left: 50px;
+    top:110px;
+    width: 450px;
+    height: 420px;
+    font: 16px '华文新魏';
+    background-color: #E3EDFE;
+
+}
+
+
+#gameTitle{
+    padding-top: 25px;
+    padding-left: 157px;
+    font: 16px Arial;
+    color: blue;
+    display: block;
+    font-weight: bold;
+}
+
+
+/*主要功能的标题信息*/
+.mainFunctions{
+    margin-left: 35px;
+}
+
+
+#loadingToast .Contents {
+    display: block;
+    margin-left: 35px;
+    line-height: 25px;
+}
+
+
+#loadingContents p{
+    font-weight: bold;
+}
+
+
+
+/*开始按钮的控制*/
+#loadButtonSpan{
+    padding-left: 160px;
+    /*设置为span为一个块元素*/
+    display: block;
+    margin-top: 30px;
+}
+
+#loadButton{
+    width: 100px;
+    height: 30px;
+}
+#loadingMessage{
+    display: none;
+}
+
+/*进度条div标签*/
+#progressDiv{
+    /*border: 1px solid red;*/
+    /*height: 50px;*/
+    padding-left: 50px;
+}
+
+
+/*左上角的计时器*/
+#gameTimerDiv{
+    display: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    /*border: 1px solid red;*/
+    top: 10px;
+    left: 5px;
+    background-color: #D0E1FD;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#gameTimerDiv span{
+    color: blue;
+    font-weight: bold;
+    font: 20px Arial;
+    display: block;
+    margin-top: 10px;
+}
+
+
+/*右上角的生命值*/
+#leftLives{
+    display: none;
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    /*border: 1px solid red;*/
+    left: 450px;
+    top: 10px;
+    background-color: #BDD4FC;
+}
+#leftLives span{
+    font-weight: bold;
+    font: 16px '黑体';
+    display: block;
+    margin: 8px 3px;
+    color: red;
+
+}
+
+
+/*用户暂停之后的pannel*/
+#pausedToast{
+    position: absolute;
+    width: 250px;
+    height: 90px;
+    border: 1px solid red;
+    left: 150px;
+    top: 50px;
+    text-align: center;
+    font: 22px '华文新魏';
+    color: blue;
+    padding-top: 45px;
+    font-weight: bold;
+    background-color: #E3EDFE;
+    border: 1px solid white;
+    display: none;
+}
+
+
+
+/*用户点击的按钮*/
+#loseLifePanel{
+    display: none;
+    position: absolute;
+    /*border: 1px solid red;*/
+    width: 150px;
+    height: 50px;
+    left:180px;
+    top: 300px;
+    text-align: center;
+    background-color: #BDD4FC;
+}
+
+#loseLifePanel button{
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    border: 1px solid #00aced;
+}
+
+
+/*游戏结束及高分榜*/
+#gameoverPan{
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    top: 50px;
+    left: 200px;
+    color: blue;
+    font: 25px fantasy;
+    display: none;
+}
+
+#topPan span{
+    font: 125px fantasy;
+    font-weight: bold;
+    color: red;
+}
+
+#middlePan .Name{
+    font-size: 18px;
+}
+
+#downPan ul li{
+    list-style: none;
+    font-size: 18px;
+    color: #404EFD;
+}
