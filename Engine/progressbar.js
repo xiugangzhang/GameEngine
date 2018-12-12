@@ -152,4 +152,4 @@ COREHTML5.Progressbar.prototype = {
     erase : function () {
         this.context.clearRect(this.LEFT, this.TOP, this.context.canvas.width, this.context.canvas.height);
     }
-}
+} 
