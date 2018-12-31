@@ -12,6 +12,7 @@
 *
 * V3.0 实现一个按键监听器
 * V4.0 游戏结束及高分榜
+* GitHub源码：https://github.com/xiugangzhang/GameEngine
 * */
 // 创建一个游戏实例-------------------------------------------------------------------------------------------
 var game = new Game("Game Engine", 'gameCanvas');
