@@ -1,7 +1,7 @@
 # GameEngine
  
-# 测试案例：http://vip.52tech.tech/game/GameEngine/index.html
-# []
+# 测试：http://vip.52tech.tech/game/GameEngine/index.html
+![预览](https://github.com/xiugangzhang/GameEngine/blob/master/preview.gif)
 ## V1.0: 引擎实现的基本模块思路
 1.创建一个游戏引擎对象及精灵对象
 2.将精灵对象添加到引擎中去，并实现播放动画效果以及需要用到的回调方法
