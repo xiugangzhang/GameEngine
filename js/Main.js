@@ -202,7 +202,7 @@ var Ball = function (x, y) {
  * @type {{paintBall: Ball.paintBall}}
  */
 Ball.prototype = {
-    paintBall: function (context) {
+    paintBall: function (context) { 
         context.save();
 
         context.strokeStyle = 'orange';
